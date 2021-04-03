@@ -1,0 +1,40 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node_modules/.bin/ts-node-dev ./src/index.ts",
+    "build": "tsc --build",
+    "test": "NODE_ENV=test PORT=7788 jest",
+    "test:watch": "npm run test --watchAll"
+  },
+  "dependencies": {
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^10.0.0",
+    "koa2-cors": "^2.0.6",
+    "redis": "^3.1.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.22",
+    "@types/koa": "^2.13.1",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-logger": "^3.1.1",
+    "@types/koa-router": "^7.4.1",
+    "@types/koa2-cors": "^2.0.1",
+    "@types/node": "^14.14.37",
+    "@types/redis": "^2.8.28",
+    "@types/supertest": "^2.0.11",
+    "chalk": "^2.4.2",
+    "husky": "^6.0.0",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "prettier-quick": "0.0.5",
+    "ts-jest": "^26.5.4",
+    "ts-node-dev": "^1.1.6"
+  }
+}
