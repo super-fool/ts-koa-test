@@ -11,3 +11,4 @@ export const blogRouter = new Router({
 
   ctx.body = matchedBlog? `found blog: ${matchedBlog.name}` : `not found blog: ${blogId}`
 })
+
